@@ -2,6 +2,13 @@
 using namespace std;
 typedef long double ld;
 typedef long long ll;
+struct st {
+    int id;
+    int age;
+    int grade;
+};
+
+
 int main() {
     /// input output
     ll x;
@@ -83,6 +90,21 @@ int main() {
     vector<int> v = {10, 2, 5, 3};
     sort(v.begin(), v.end());
     for (auto x: v) cout << x << ' ';
+
+    /// using structs for grouped data
+    st a;
+    st b;
+    st c;
+    a.id = 10;
+    a.grade = 5;
+    b.age = 30;
+
+    st ara[500];
+    for (int i = 0; i < 500; i++) {
+        st[i].id = i;
+        st[i].grade = i;
+        st[i].age = i;
+    }
 
 
 
